@@ -1,0 +1,18 @@
+<h1> Bears <h1>
+
+ <% @bears.each do |bear| %>
+
+     <h2>
+      <span> <%=link_to bear.name, bear_path(bear) %></span> 
+
+      <div><%=link_to "Delete", bear_path(bear), method: :delete %></div>
+
+      <div><%=link_to "Edit", edit_bear_path(bear) %></div>  
+
+      </h2>
+
+   <% end %>
+
+   <h3>
+        <%= link_to "Create A New Bear", new_bear_path %>
+    </h3>

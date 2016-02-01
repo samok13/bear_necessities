@@ -1,0 +1,11 @@
+<h1><%= @bear.name %></h1>
+
+<p><%= @bear.description %></p>
+
+<img src="http://placebear.com/200/300" alt="Bear">
+
+<p> <%= link_to "<< Back to Bears List", bears_path %> </p>
+
+<p><%= link_to "Delete", bear_path(@bear), method: :delete %> </p>
+
+<p><%= link_to "Edit", edit_bear_path(@bear) %></p>
